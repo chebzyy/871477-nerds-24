@@ -29,6 +29,12 @@
     <h1 class="page-title">Магазин готовых шаблонов</h1>
     <section class="filters">
       <h2 class="visually-hidden">Фильтры поиска</h2>
+      <h3>СТОИМОСТЬ:</h3>
+       <input type="range" id="price" name="price" min="0" max="15000" step="1">
+       <label for="from">ОТ</label>
+        <input type="text" id="from" name="from" value="0">
+        <label for="till">ОТ</label>
+        <input type="text" id="till" name="till" value="15000">
       <h3>СЕТКА:</h3>
       <ul>
         <li>Адаптивная</li>
@@ -46,6 +52,12 @@
       <a class="button" href="show.html">Показать</a>
     </section>
     <section class="catalog">
+      <h3> СОРТИРОВАТЬ:</h3>
+      <ul>
+        <li>ПО ЦЕНЕ</li>
+        <li>ПО ТИПУ</li>
+        <li>ПО НАЗВАНИЮ</li>
+      </ul>
       <h2 class="visually-hidden">Список сайтов</h2>
       <ul class="catalog-list">
         <li class="catalog-item">
@@ -67,7 +79,21 @@
           <h3><a href="catalog-item.html">KBACT</a></h3>
         </li>
       </ul>
+      <ul class="pagination-list">
+          <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+          <li class="pagination-item"><a>2</a></li>
+          <li class="pagination-item"><a href="#">3</a></li>
+          <li class="pagination-item"><a href="#">4</a></li>
+        </ul>
     </section>
+    <section class="contacts">
+        <p>NERDS DESIGN STUDIO</p>
+        <p>191186, Санкт-Петербург,<br>
+          ул. Б. Конюшенная, д. 19/8 <br>
+          тел. +7 (812) 275-75-75</p>
+        <a class="button" href="#">Напишите нам</a>
+        <a href="map.html"></a>
+      </section>
   </main>
   <footer class="main-footer">
     <div class="footer-social">
