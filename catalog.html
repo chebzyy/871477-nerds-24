@@ -13,9 +13,9 @@
         <img src="img/nerds-logo.svg" width="160" heaight="65" alt="Логотип NERD's">
       </a>
       <ul class="site-navigation">
-        <li><a href="studio.html">Студия</a></li>
+        <li><a href="index.html">Студия</a></li>
         <li><a href="clients.html">Клиенты</a></li>
-        <li><a href="shop.html" class="site-navigation-current">Магазин</a></li>
+        <li><a href="shop.html" class="sit  e-navigation-current">Магазин</a></li>
         <li><a href="contacts.html">Контакты</a></li>
       </ul>
       <ul>
@@ -40,19 +40,45 @@
       <div>
         <h3>Сетка:</h3>
         <ul>
-          <li>Адаптивная</li>
-          <li>Фиксированная</li>
-          <li>Резиновая</li>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="adaptive" id="filter-adaptive">
+            <label for="filter-adaptive">Адаптивная</label>
+          </li>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="fix" id="filter-fix">
+            <label for="filter-fix">Фиксированная</label>
+          </li>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="rubber" id="filter-rubber">
+            <label for="filter-rubber">Резиновая</label>
+          </li>
         </ul>
       </div>
       <div>
         <h3>Особенности:</h3>
         <ul>
-          <li>Слайдер</li>
-          <li>Блок преимуществ</li>
-          <li>Новости</li>
-          <li>Галерея</li>
-          <li>Корзина</li>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider"
+              checked>
+            <label for="filter-slider">Слайдер</label>
+          </li>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="advantages" id="filter-advantages">
+            <label for="filter-advantages">Блок преимуществ</label>
+          </li>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" id="filter-news"
+              checked>
+            <label for="filter-news">Новости</label>
+          </li>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
+            <label for="filter-gallery">Галерея</label>
+          </li>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="have-basket" id="filter-have-basket">
+            <label for="filter-have-basket">Корзина</label>
+          </li>
         </ul>
       </div>
       <a class="button" href="show.html">Показать</a>
@@ -112,25 +138,25 @@
         ул. Б. Конюшенная, д. 19/8 <br>
         <a href="+78122757575"> тел. +7 (812) 275-75-75</a></p>
       <a class="button" href="write-us.html">Напишите нам</a>
-      <a href="map.html"><img src="img/2.jpg" width="1440" height="416" alt="Карта"></a>
+      <a href="map.html"><img src="img/2.jpg" width="1440" height="416" alt="Адрес  Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8"></a>
     </section>
     <section class="write-us">
       <h2>Напишите нам</h2>
-       <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
-         <p class="write-us-item">
+      <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="write-us-item">
           <label for="name">Ваше имя:</label>
-             <input id="name" type="text" name="name" value="" placeholder="Имя Фамилия">
-         </p>
-         <p class="write-us-item">
-           <label for="e-mail">Ваш e-mail:</label>
-             <input id="e-mail" type="text" name="e-mail" value="" placeholder="email@example.com">
-         </p>
-         <p class="write-us-item">
-           <label for="letter"> Текст письма:</label>
-             <input id="letter" type="text" name="letter" value="" placeholder="В свободной форме">
-         </p>
-         <button class="button" type="submit">Отправить</button>
-       </form>
+          <input id="name" type="text" name="name" value="" placeholder="Имя Фамилия">
+        </p>
+        <p class="write-us-item">
+          <label for="e-mail">Ваш e-mail:</label>
+          <input id="e-mail" type="text" name="e-mail" value="" placeholder="email@example.com">
+        </p>
+        <p class="write-us-item">
+          <label for="letter"> Текст письма:</label>
+          <input id="letter" type="text" name="letter" value="" placeholder="В свободной форме">
+        </p>
+        <button class="button" type="submit">Отправить</button>
+      </form>
     </section>
   </main>
   <footer class="main-footer">
