@@ -29,59 +29,62 @@
     <h1 class="page-title">Магазин готовых шаблонов</h1>
     <section class="filters">
       <h2 class="visually-hidden">Фильтры поиска</h2>
-      <div>
-        <h3>Стоимость:</h3>
-        <input type="range" id="price" name="price" min="0" max="15000" step="1">
-        <label for="from">От</label>
-        <input type="text" id="from" name="from" value="0">
-        <label for="till">До</label>
-        <input type="text" id="till" name="till" value="15000">
-      </div>
-      <div>
-        <h3>Сетка:</h3>
-        <ul>
-          <li class="filter-option">
-            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="adaptive" id="filter-adaptive">
-            <label for="filter-adaptive">Адаптивная</label>
-          </li>
-          <li class="filter-option">
-            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="fix" id="filter-fix">
-            <label for="filter-fix">Фиксированная</label>
-          </li>
-          <li class="filter-option">
-            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="rubber" id="filter-rubber">
-            <label for="filter-rubber">Резиновая</label>
-          </li>
-        </ul>
-      </div>
-      <div>
-        <h3>Особенности:</h3>
-        <ul>
-          <li class="filter-option">
-            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider"
-              checked>
-            <label for="filter-slider">Слайдер</label>
-          </li>
-          <li class="filter-option">
-            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="advantages" id="filter-advantages">
-            <label for="filter-advantages">Блок преимуществ</label>
-          </li>
-          <li class="filter-option">
-            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" id="filter-news"
-              checked>
-            <label for="filter-news">Новости</label>
-          </li>
-          <li class="filter-option">
-            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
-            <label for="filter-gallery">Галерея</label>
-          </li>
-          <li class="filter-option">
-            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="have-basket" id="filter-have-basket">
-            <label for="filter-have-basket">Корзина</label>
-          </li>
-        </ul>
-      </div>
-      <button>Показать</button>
+      <form class="write-us-form" action="https://echo.htmlacademy.ru" method="get">
+        <div>
+          <h3>Стоимость:</h3>
+          <input type="range" id="price" name="price" min="0" max="15000" step="1">
+          <label for="from">От</label>
+          <input type="text" id="from" name="from" value="0">
+          <label for="till">До</label>
+          <input type="text" id="till" name="till" value="15000">
+        </div>
+        <div>
+          <h3>Сетка:</h3>
+          <ul>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="adaptive"
+                id="filter-adaptive">
+              <label for="filter-adaptive">Адаптивная</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="fix" id="filter-fix">
+              <label for="filter-fix">Фиксированная</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="rubber" id="filter-rubber">
+              <label for="filter-rubber">Резиновая</label>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3>Особенности:</h3>
+          <ul>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider"
+                checked>
+              <label for="filter-slider">Слайдер</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="advantages" id="filter-advantages">
+              <label for="filter-advantages">Блок преимуществ</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" id="filter-news"
+                checked>
+              <label for="filter-news">Новости</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
+              <label for="filter-gallery">Галерея</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="have-basket" id="filter-have-basket">
+              <label for="filter-have-basket">Корзина</label>
+            </li>
+          </ul>
+        </div>
+        <button class="button" type="submit">Показать</button>
+      </form>
     </section>
     <section class="catalog">
       <h3>Сортировать:</h3>
