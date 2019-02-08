@@ -4,14 +4,16 @@
 <head>
   <meta charset="UTF-8" />
   <title>Nerd's</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="main-header">
     <nav class="main-navigation">
-      <h1>Дизайн-студия NERDS
+      <h1 class="visually-hidden">Дизайн-студия NERDS </h1>
         <img src="img/nerds-logo.svg" width="160" heaight="65" alt="Логотип NERD's">
-      </h1>
       <ul class="site-navigation">
         <li><a href="studio.html">Студия</a></li>
         <li><a href="clients.html">Клиенты</a></li>
@@ -25,42 +27,42 @@
   </header>
   <main class="container">
     <section class="info-slogan">
-      <p>Долго, дорого, скрупулезно.</p>
+      <p class="main-slogan">Долго, дорого, скрупулезно.</p>
       <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
       <a class="button" href="learn-more.html">Узнать больше</a>
     </section>
     <section class="service">
       <h2 class="visually-hidden">Услуги</h2>
       <ul class="servis-list">
-        <li class="servis-item">
+        <li class="servis-item servis-item-website">
           <h3>Веб-сайты</h3>
           <p>Мир никогда не будет прежним после того как увидит наш сайт</p>
-          <a class="button" href="web-cite.html">Заказать</a>
+          <a class="button" href="web-site.html">Заказать</a>
         </li>
-        <li class="servis-item">
+        <li class="servis-item servis-item-application">
           <h3>Приложения</h3>
           <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-          <a class="button" href="application.html">Заказать</a>
+          <a class="button button-green" href="application.html">Заказать</a>
         </li>
-        <li class="servis-item">
+        <li class="servis-item servis-item-presentation">
           <h3>Презентации</h3>
           <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-          <a class="button" href="presentation.html">Заказать</a>
+          <a class="button button-yellow" href="presentation.html">Заказать</a>
         </li>
       </ul>
     </section>
     <section class="about">
-      <p>Мы — маленькая, но гордая дизайн-студия из Краснодара. </p>
+      <p class="about-big">Мы — маленькая, но гордая дизайн-студия из Краснодара. </p>
       <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
         превыше креатива. Работаем не покладая рук, как роботы.</p>
-      <ul> Выполняем заказы на разработку:
+      <ul> <div class="order-info">Выполняем заказы на разработку:</div>
         <li>Веб-сайтов любой сложности</li>
         <li>Мобильных приложений для iOS и Android</li>
         <li>Слайдшоу и видео для корпоративных презентаций</li>
       </ul>
       <table>
-        <caption>с 2004 года Любим точность во всем:</caption>
-        <tr>
+        <caption><div class="order-info">с 2004 года Любим точность во всем:</div></caption>
+        <tr class="percent">
           <td>146%</td>
           <td>100%</td>
           <td>50%</td>
@@ -72,17 +74,19 @@
         </tr>
       </table>
     </section>
-    <section>
+    <section class="projects">
       <a href="#"><img src="img/logo-1-png-copy.png" width="199" height="68" alt="Сайт html-academy"></a>
       <a href="#"><img src="img/logo-2-png-copy.png" width="209" height="90" alt="Сайт borodinski"></a>
       <a href="#"><img src="img/logo-3-png-copy.png" width="185" height="52" alt="Сайт pink"></a>
       <a href="#"><img src="img/logo-4-png-copy.png" width="173" height="84" alt="Сайт mishka"></a>
     </section>
     <section class="contacts">
-      <p>NERDS DESIGN STUDIO</p>
+      <p class="contacts-title">Nerds design studio</p>
+      <div class="address">
       <p>191186, Санкт-Петербург,<br>
         ул. Б. Конюшенная, д. 19/8 <br>
         <a href="tel:+78122757575"> тел. +7 (812) 275-75-75</a></p>
+      </div>
       <a class="button" href="write-us.html">Напишите нам</a>
       <a href="map.html"><img src="img/2.jpg" width="1440" height="416" alt="Адрес  Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8"></a>
     </section>
@@ -109,12 +113,12 @@
   <footer class="main-footer">
     <div class="social-wrap">
       <ul>
-        <li><a class="social-button" href="#">Вконтакте</a></li>
+        <li><a class="" href="#">Вконтакте</a></li>
         <li><a class="social-button" href="#">Фейсбук</a></li>
         <li><a class="social-button" href="#">Инстаграм</a></li>
       </ul>
-      <span class="social-slogan">Давайте дружить, это выгодно!</span>
-      <span class="social-promo">Скидка 10% для друзей из социальных сетей</span>
+      <span class="footer-slogan">Давайте дружить, это выгодно!</span>
+      <span class="footer-promo">Скидка 10% для друзей из социальных сетей</span>
     </div>
   </footer>
 </body>

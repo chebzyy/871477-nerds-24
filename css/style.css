@@ -1,0 +1,263 @@
+
+/* body > * { background-color: rgba(255,0,0,0.5); } body > * > * { background-color: rgba(255,255,0,0.5); } body > * > * > * { background-color: rgba(0,255,0,0.5); } body > * > * > * { background-color: rgba(255,0,255,0.5); } */
+
+body { */
+  margin: 0;
+
+  font-family: "Roboto", arial, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 24px;
+  letter-spacing: normal;
+  color:#283136;
+  background-color: #ffffff;
+}
+
+.visually-hidden {
+  visibility: hidden;
+}
+
+h1 {
+  font-size: 55px;
+  text-align: center;
+  color: #000000;
+  background-color: #eeeeef;
+}
+
+header {
+  background-color: #eeeeef;
+}
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+  background-color: #eeeeef;
+  text-transform: uppercase;
+
+}
+
+.site-navigation,
+.basket {
+  list-style: none;
+ 
+}
+
+.site-navigation a,
+.basket a {
+  color: #000000;
+  background-color: #eeeeef;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.basket a:hover,
+.basket a:focus {
+  color: #fb565a
+}
+
+.info-slogan{
+  height: 413px;
+  background-color: #eeeeef;
+  background-image: url("../img/slide-1.png");
+  background-position: right;
+  background-size: 698px 413px;
+  background-repeat: no-repeat;
+
+}
+.main-slogan {
+  width: 376px;
+  height: 106px;
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
+  letter-spacing: normal;
+  color: #000000;
+  background-color: #eeeeef;
+}
+
+.servis-list {
+  list-style: none;
+}
+
+.servis-list h3 {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.about-big {
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 1;
+  color: #000000;
+  background-color: #ffffff;
+ }
+
+.servis-item::before {
+  background-image: url("../img/illustration-1.png");
+  background-repeat: no-repeat;
+  content: "";
+  width: 300px;
+  height: 146px;
+  display: block;
+}
+
+.servis-item-application::before {
+  background-image: url("../img/illustration-2.png");
+}
+
+.servis-item-presentation::before {
+  background-image: url("../img/illustration-3.png");
+}
+
+.order-info {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.percent {
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 10px;
+  width: 93px;
+  height: 35px;
+}
+
+.projects a {
+  opacity: 0.2;
+}
+
+.projects a:hover,
+.projects a:focus {
+ opacity: 1;
+}
+
+.contacts-title {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.67;
+  text-transform: uppercase;
+}
+
+.address,
+.address a {
+  font-size: 16px;
+  color: #666666;
+  background-color: #ffffff;
+}
+
+.write-us h2 {
+  font-size: 45px;
+  line-height: 45px;
+  color: #000000;
+  background-color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.write-us-item label {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 18px;
+}
+
+.button {
+  font: inferit;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #fb565a;
+  border: none;
+
+}
+
+.button-green {
+  background-color: #00ca74;
+}
+
+.button-yellow {
+
+  background-color: #efc84a;
+}
+
+.social-wrap ul {
+ list-style: none;
+}
+
+.social-wrap {
+  text-align: left;
+  color: #000000;
+  background-color: #ffffff;
+
+}
+
+.footer-slogan {
+  font-size: 36px;
+  font-weight: bold;
+  line-height:36px;
+}
+
+.social-button {
+  color: #000000;
+  background-color: #ffffff; 
+}
+
+.footer-promo {
+  font-size: 16px;
+  line-height: 22px;
+  color: #444444;
+  background-color: #ffffff; 
+}
+
+.filter-option  {
+  font-size: 16px;
+  color: #283136;
+  list-style: none;
+}
+.catalog-filters {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  color: #000000;
+  background-color: #ffffff; 
+  text-transform: uppercase;
+
+}
+
+.sort-filters li {
+  list-style: none;
+}
+.sort-filters a {
+  list-style: none;
+  color: #000000;
+  background-color: #ffffff; 
+  list-style: none;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.sort-filters a:hover,
+.sort-filters a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.catalog-list li {
+  list-style: none;
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item a {
+  height: 12px;
+  color: #000000;
+  background-color: #ffffff;
+  text-transform: uppercase;
+}
