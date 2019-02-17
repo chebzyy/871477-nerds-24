@@ -9,173 +9,182 @@
 </head>
 
 <body>
-  <header class="main-header">
-    <nav class="main-navigation">
-      <a class="main-header-logo" href="index.html">
-        <img src="img/nerds-logo.svg" width="160" heaight="65" alt="Логотип NERD's">
-      </a>
-      <ul class="site-navigation">
-        <li><a href="studio.html">Студия</a></li>
-        <li><a href="clients.html">Клиенты</a></li>
-        <li><a href="shop.html" class="site-navigation-current">Магазин</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
-      </ul>
-      <ul>
-        <li class="basket">
-          <a class="basket" href="basket.html">Корзина</a>
-        </li>
-      </ul>
-    </nav>
+  <div class="container">
+    <header class="main-header">
+      <nav class="main-navigation">
+        <h1 class="visually-hidden">Дизайн-студия NERDS </h1>
+        <a class="main-header-logo">
+          <img src="img/nerds-logo.svg" width="160" heaight="65" alt="Логотип NERD's">
+        </a>
+        <div class="main-navigation-wrapper">
+          <ul class="site-navigation">
+            <li><a href="studio.html">Студия</a></li>
+            <li><a href="clients.html">Клиенты</a></li>
+            <li><a href="catalog.html">Магазин</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+          <ul class="basket-list">
+            <li class="basket"><a href="basket.html">Корзина</a></li>
+          </ul>
+        </div>
+  </div>
+  </nav>
   </header>
-  <main class="conteiner">
+  <main class="container">
     <h1 class="page-title">Магазин готовых шаблонов</h1>
-    <section class="filters">
-      <h2 class="visually-hidden">Фильтры поиска</h2>
-      <form class="filters-form" action="https://echo.htmlacademy.ru" method="get">
-        <div>
-          <h3 class="catalog-filters">Стоимость:</h3>
-          <input type="range" id="price" name="price" min="0" max="15000" step="1">
-          <label for="from">От</label>
-          <input type="text" id="from" name="from" value="0">
-          <label for="till">До</label>
-          <input type="text" id="till" name="till" value="15000">
-        </div>
-        <div>
-          <h3 class="catalog-filters">Сетка:</h3>
-          <ul>
-            <li class="filter-option">
-              <input class="filter-input filter-input-radio" type="radio" name="grid" value="adaptive" id="filter-adaptive">
-              <label for="filter-adaptive">Адаптивная</label>
-            </li>
-            <li class="filter-option">
-              <input class="filter-input filter-input-radio" type="radio" name="grid" value="fix" id="filter-fix">
-              <label for="filter-fix">Фиксированная</label>
-            </li>
-            <li class="filter-option">
-              <input class="filter-input filter-input-radio" type="radio" name="grid" value="rubber" id="filter-rubber">
-              <label for="filter-rubber">Резиновая</label>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="catalog-filters">Особенности:</h3>
-          <ul>
-            <li class="filter-option">
-              <input class="filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider"
-                checked>
-              <label for="filter-slider">Слайдер</label>
-            </li>
-            <li class="filter-option">
-              <input class="filter-input filter-input-checkbox" type="checkbox" name="advantages" id="filter-advantages">
-              <label for="filter-advantages">Блок преимуществ</label>
-            </li>
-            <li class="filter-option">
-              <input class="filter-input filter-input-checkbox" type="checkbox" name="news" id="filter-news" checked>
-              <label for="filter-news">Новости</label>
-            </li>
-            <li class="filter-option">
-              <input class="filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
-              <label for="filter-gallery">Галерея</label>
-            </li>
-            <li class="filter-option">
-              <input class=" filter-input filter-input-checkbox" type="checkbox" name="have-basket" id="filter-have-basket">
-              <label for="filter-have-basket">Корзина</label>
-            </li>
-          </ul>
-        </div>
-        <button class="button" type="submit">Показать</button>
-      </form>
-    </section>
-    <section class="catalog">
-      <h3 class="catalog-filters">Сортировать:</h3>
-      <ul class="sort-filters">
-        <li><a href="#">По цене</a></li>
-        <li><a href="#">По типу</a></li>
-        <li><a href="#">По названию</a></li>
-        <li><a href="#">По возрастанию</a></li>
-        <li><a href="#">По убыванию</a></li>
-      </ul>
-      <h2 class="visually-hidden">Список сайтов</h2>
-      <ul class="catalog-list">
-        <li class="catalog-item">
-          <a href="catalog-item.html">
-            <img src="img/img-sedona-jpg.png" width="360" height="576" alt="SEDONA">
-          </a>
-        </li>
-        <li class="catalog-item">
-          <a href="catalog-item.html">
-            <img src="img/img-pink-jpg.png" width="360" height="576" alt="PINK">
-          </a>
-        </li>
-        <li class="catalog-item">
-          <a href="catalog-item.html">
-            <img src="img/img-barbershop-jpg.png" width="360" height="576" alt="BORODINSKI">
-          </a>
-        </li>
-        <li class="catalog-item">
-          <a href="catalog-item.html">
-            <img src="img/img-mishka-jpg.png" width="360" height="576" alt="MISHKA">
-          </a>
-        </li>
-        <li class="catalog-item">
-          <a href="catalog-item.html">
-            <img src="img/img-aplus-jpg.png" width="360" height="576" alt="A+">
-          </a>
-        </li>
-        <li class="catalog-item">
-          <a href="catalog-item.html">
-            <img src="img/img-kvast-jpg.png" width="360" height="576" alt="KBACT">
-          </a>
-        </li>
-      </ul>
-      <ul class="pagination-list">
-        <li class="pagination-item pagination-item-current"><a>1</a></li>
-        <li class="pagination-item"><a href="#">2</a></li>
-        <li class="pagination-item"><a href="#">3</a></li>
-        <li class="pagination-item"><a href="#">Следующая</a></li>
-      </ul>
-    </section>
+    <div class="catalog-columns">
+      <section class="filters">
+        <h2 class="visually-hidden">Фильтры поиска</h2>
+        <form class="filters-form" action="https://echo.htmlacademy.ru" method="get">
+          <div>
+            <h3 class="catalog-filters">Стоимость:</h3>
+            <input type="range" id="price" name="price" min="0" max="15000" step="1">
+            <label for="from">От</label>
+            <input type="text" id="from" name="from" value="0">
+            <label for="till">До</label>
+            <input type="text" id="till" name="till" value="15000">
+          </div>
+          <div>
+            <h3 class="catalog-filters">Сетка:</h3>
+            <ul>
+              <li class="filter-option">
+                <input class="filter-input filter-input-radio" type="radio" name="grid" value="adaptive" id="filter-adaptive">
+                <label for="filter-adaptive">Адаптивная</label>
+              </li>
+              <li class="filter-option">
+                <input class="filter-input filter-input-radio" type="radio" name="grid" value="fix" id="filter-fix">
+                <label for="filter-fix">Фиксированная</label>
+              </li>
+              <li class="filter-option">
+                <input class="filter-input filter-input-radio" type="radio" name="grid" value="rubber" id="filter-rubber">
+                <label for="filter-rubber">Резиновая</label>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="catalog-filters">Особенности:</h3>
+            <ul>
+              <li class="filter-option">
+                <input class="filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider"
+                  checked>
+                <label for="filter-slider">Слайдер</label>
+              </li>
+              <li class="filter-option">
+                <input class="filter-input filter-input-checkbox" type="checkbox" name="advantages" id="filter-advantages">
+                <label for="filter-advantages">Блок преимуществ</label>
+              </li>
+              <li class="filter-option">
+                <input class="filter-input filter-input-checkbox" type="checkbox" name="news" id="filter-news" checked>
+                <label for="filter-news">Новости</label>
+              </li>
+              <li class="filter-option">
+                <input class="filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
+                <label for="filter-gallery">Галерея</label>
+              </li>
+              <li class="filter-option">
+                <input class=" filter-input filter-input-checkbox" type="checkbox" name="have-basket" id="filter-have-basket">
+                <label for="filter-have-basket">Корзина</label>
+              </li>
+            </ul>
+          </div>
+          <button class="button" type="submit">Показать</button>
+        </form>
+      </section>
+      <section class="catalog">
+        <h3 class="catalog-filters">Сортировать:</h3>
+        <ul class="sort-filters">
+          <li><a href="#">По цене</a></li>
+          <li><a href="#">По типу</a></li>
+          <li><a href="#">По названию</a></li>
+          <li><a href="#">По возрастанию</a></li>
+          <li><a href="#">По убыванию</a></li>
+        </ul>
+        <h2 class="visually-hidden">Список сайтов</h2>
+        <ul class="catalog-list">
+          <li class="catalog-item">
+            <a href="catalog-item.html">
+              <img src="img/img-sedona-jpg.png" width="360" height="576" alt="SEDONA">
+            </a>
+          </li>
+          <li class="catalog-item">
+            <a href="catalog-item.html">
+              <img src="img/img-pink-jpg.png" width="360" height="576" alt="PINK">
+            </a>
+          </li>
+          <li class="catalog-item">
+            <a href="catalog-item.html">
+              <img src="img/img-barbershop-jpg.png" width="360" height="576" alt="BORODINSKI">
+            </a>
+          </li>
+          <li class="catalog-item">
+            <a href="catalog-item.html">
+              <img src="img/img-mishka-jpg.png" width="360" height="576" alt="MISHKA">
+            </a>
+          </li>
+          <li class="catalog-item">
+            <a href="catalog-item.html">
+              <img src="img/img-aplus-jpg.png" width="360" height="576" alt="A+">
+            </a>
+          </li>
+          <li class="catalog-item">
+            <a href="catalog-item.html">
+              <img src="img/img-kvast-jpg.png" width="360" height="576" alt="KBACT">
+            </a>
+          </li>
+        </ul>
+        <ul class="pagination-list">
+          <li class="pagination-item pagination-item-current"><a>1</a></li>
+          <li class="pagination-item"><a href="#">2</a></li>
+          <li class="pagination-item"><a href="#">3</a></li>
+          <li class="pagination-item"><a href="#">Следующая</a></li>
+        </ul>
+      </section>
+    </div>
     <section class="contacts">
       <p class="contacts-title">Nerds design studio</p>
       <div class="address">
         <p>191186, Санкт-Петербург,<br>
           ул. Б. Конюшенная, д. 19/8 <br>
-          <a href="tel:+78122757575"> тел. +7 (812) 275-75-75</a></p>
+          <a href="tel:+78122757575"> +7 (812) 275-75-75</a></p>
       </div>
       <a class="button" href="write-us.html">Напишите нам</a>
       <a href="map.html"><img src="img/2.jpg" width="1440" height="416" alt="Адрес  Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8"></a>
     </section>
-    <section class="write-us">
-      <h2>Напишите нам</h2>
-      <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
-        <p class="write-us-item">
-          <label for="name">Ваше имя:</label>
-          <input id="name" type="text" name="name" placeholder="Имя Фамилия">
-        </p>
-        <p class="write-us-item">
-          <label for="email">Ваш e-mail:</label>
-          <input id="email" type="text" name="email" placeholder="email@example.com">
-        </p>
-        <p class="write-us-item">
-          <label for="letter"> Текст письма:</label>
-          <textarea id="letter" type="text" name="letter" placeholder="В свободной форме"></textarea>
-        </p>
-        <button class="button" type="submit">Отправить</button>
-        <button class="close" type="button">Закрыть</button>
-      </form>
-    </section>
   </main>
   <footer class="main-footer">
-    <div class="social-wrap">
-      <ul>
-        <li><a class="" href="#">Вконтакте</a></li>
+    <div class="container">
+      <ul class="social-net">
+        <li><a class="social-button" href="#">Вконтакте</a></li>
         <li><a class="social-button" href="#">Фейсбук</a></li>
         <li><a class="social-button" href="#">Инстаграм</a></li>
       </ul>
-      <span class="footer-slogan">Давайте дружить, это выгодно!</span>
-      <span class="footer-promo">Скидка 10% для друзей из социальных сетей</span>
+      <div class="footer-text">
+        <span class="footer-slogan">Давайте дружить, это выгодно!</span>
+        <span class="footer-promo">Скидка 10% для друзей из социальных сетей</span>
+      </div>
     </div>
+
   </footer>
+  <section class="write-us">
+    <h2>Напишите нам</h2>
+    <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+      <p class="write-us-item">
+        <label for="name">Ваше имя:</label>
+        <input id="name" type="text" name="name" placeholder="Имя Фамилия">
+      </p>
+      <p class="write-us-item">
+        <label for="email">Ваш e-mail:</label>
+        <input id="email" type="text" name="email" placeholder="email@example.com">
+      </p>
+      <p class="write-us-item">
+        <label for="letter"> Текст письма:</label>
+        <textarea id="letter" type="text" name="letter" placeholder="В свободной форме"></textarea>
+      </p>
+      <button class="button" type="submit">Отправить</button>
+      <button class="close" type="button">Закрыть</button>
+    </form>
+  </section>
+
 </body>
 
 </html>
