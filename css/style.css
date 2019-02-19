@@ -413,6 +413,9 @@
    background-color: #ffffff;
    padding: 50px;
    border: 1px;
+   width: 319px;
+   height: 308px;
+   box-sizing: border-box;
  }
 
  .map {
