@@ -54,19 +54,19 @@
    text-align: center;
    line-height: 55px;
    color: #000000;
-   background-color: #e1e1e1;
-   width: 1140px;
+   width: auto;
    padding: 0;
-   margin: 0 auto;
-   display: flex;
-   justify-content: center;
-   min-height: 235px;
-   padding-bottom: 25px;
+   margin: 0;
+   padding-bottom: 116px;
    padding-top: 100px;
    padding-left: 20px;
    padding-right: 20px;
-
  }
+
+ .page-title-whole {
+   background-color: #e1e1e1;
+ }
+
 
  header {
    background-color: #e1e1e1;
@@ -287,6 +287,36 @@
    color: rgba(0, 0, 0, 0.6);
  }
 
+ .filters-whole {
+   display: flex;
+ }
+
+ .sort-filters {
+   display: flex;
+ }
+
+ .sort-filters li {
+   margin-left: 26px;
+ }
+
+ .rise-low {
+   display: flex;
+ }
+
+ .sort {
+   margin-right: 177px;
+ }
+
+ .cage ul,
+ .features ul {
+   padding: 0;
+ }
+
+ .cage li,
+ .features li {
+   margin-bottom: 15px;
+ }
+
  .catalog-list li {
    list-style: none;
    margin-bottom: 60px;
@@ -295,7 +325,7 @@
  .pagination-list {
    padding: 0;
    margin: 0;
-
+   display: flex;
    list-style: none;
  }
 
@@ -303,6 +333,7 @@
    color: #000000;
    background-color: #ffffff;
    text-transform: uppercase;
+   margin-left: 15px;
  }
 
  .main-header {
