@@ -38,27 +38,38 @@
         <section class="filters">
           <h2 class="visually-hidden">Фильтры поиска</h2>
           <form class="filters-form" action="https://echo.htmlacademy.ru" method="get">
-            <div class="cost">
+            <div class="filter-item">
               <h3 class="catalog-filters">Стоимость:</h3>
-              <input type="range" id="price" name="price" min="0" max="15000" step="1">
-              <label for="from">От</label>
-              <input type="text" id="from" name="from" value="0">
-              <label for="till">До</label>
-              <input type="text" id="till" name="till" value="15000">
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar" style="margin-left: 20%; width: 30%"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                  <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                </div>
+              </div>
             </div>
             <div class="cage">
               <h3 class="catalog-filters">Сетка:</h3>
               <ul>
                 <li class="filter-option">
-                  <input class="filter-input filter-input-radio" type="radio" name="grid" value="adaptive" id="filter-adaptive">
+                  <input class="filter-input filter-input-radio visually-hidden" type="radio" name="grid" value="adaptive"
+                    id="filter-adaptive">
                   <label for="filter-adaptive">Адаптивная</label>
                 </li>
                 <li class="filter-option">
-                  <input class="filter-input filter-input-radio" type="radio" name="grid" value="fix" id="filter-fix">
+                  <input class="filter-input filter-input-radio visually-hidden" type="radio" name="grid" value="fix"
+                    id="filter-fix">
                   <label for="filter-fix">Фиксированная</label>
                 </li>
                 <li class="filter-option">
-                  <input class="filter-input filter-input-radio" type="radio" name="grid" value="rubber" id="filter-rubber">
+                  <input class="filter-input filter-input-radio visually-hidden" type="radio" name="grid" value="rubber"
+                    id="filter-rubber">
                   <label for="filter-rubber">Резиновая</label>
                 </li>
               </ul>
@@ -67,25 +78,27 @@
               <h3 class="catalog-filters">Особенности:</h3>
               <ul>
                 <li class="filter-option">
-                  <input class="filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider"
+                  <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="slider" id="filter-slider"
                     checked>
                   <label for="filter-slider">Слайдер</label>
                 </li>
                 <li class="filter-option">
-                  <input class="filter-input filter-input-checkbox" type="checkbox" name="advantages" id="filter-advantages">
+                  <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="advantages"
+                    id="filter-advantages">
                   <label for="filter-advantages">Блок преимуществ</label>
                 </li>
                 <li class="filter-option">
-                  <input class="filter-input filter-input-checkbox" type="checkbox" name="news" id="filter-news"
+                  <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="news" id="filter-news"
                     checked>
                   <label for="filter-news">Новости</label>
                 </li>
                 <li class="filter-option">
-                  <input class="filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
+                  <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="gallery" id="filter-gallery">
                   <label for="filter-gallery">Галерея</label>
                 </li>
                 <li class="filter-option">
-                  <input class=" filter-input filter-input-checkbox" type="checkbox" name="have-basket" id="filter-have-basket">
+                  <input class=" filter-input filter-input-checkbox visually-hidden" type="checkbox" name="have-basket"
+                    id="filter-have-basket">
                   <label for="filter-have-basket">Корзина</label>
                 </li>
               </ul>
@@ -104,8 +117,8 @@
               <li><a href="#">По названию</a></li>
             </ul>
             <ul class="rise-low">
-              <li><a href="#">rise</a></li>
-              <li><a href="#">low</a></li>
+              <li><a href="#" class="rise"><span class="visually-hidden">rise</span></a></li>
+              <li><a href="#" class="low"><span class="visually-hidden">low</span></a></li>
             </ul>
           </div>
           <h2 class="visually-hidden">Список сайтов</h2>
