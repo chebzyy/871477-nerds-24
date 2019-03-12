@@ -422,16 +422,30 @@
    font-size: 16px;
    color: #283136;
    list-style: none;
-   opacity: 0.4;
  }
 
- .filter-option:hover {
-   color: #4d4d4d;
-   opacity: 1;
+ .filter-input-radio + label:hover::before,
+ .filter-input-radio + label:focus::before {
+  border: 2px solid #4d4d4d;
+ }
+
+ .filter-input-radio:checked + label:hover::after,
+ .filter-input-radio:checked + label:focus::after {
+  background-color: #4d4d4d;
+ }
+
+ .filter-input-checkbox + label:hover::before,
+ .filter-input-checkbox + label:focus::before {
+  opacity: 1;
+ }
+
+ .filter-input-checkbox:checked + label:hover::before,
+ .filter-input-checkbox:checked + label:focus::before {
+  opacity: 1;
  }
 
  .filter-option:disabled {
-   opacity: 0.3;
+  color: rgba(40, 49, 54, 0.3);
  }
 
  .catalog-filters {
@@ -455,12 +469,18 @@
    list-style: none;
    font-size: 14px;
    text-transform: uppercase;
+   opacity: 0.3;
  }
 
  .sort-filters a:hover,
  .sort-filters a:focus {
-   color: rgba(0, 0, 0, 0.6);
+  opacity: 0.6;
  }
+
+ .sort-filters a:active {
+   opacity: 1;
+ }
+
 
  .filters-whole {
    display: flex;
@@ -514,6 +534,19 @@
    width: 50px;
    box-sizing: border-box;
    padding: 0;
+   opacity: 0.3;
+ }
+
+ .rise:hover,
+ .rise:focus,
+ .low:hover,
+ .low:focus {
+   opacity: 0.6;
+ }
+
+ .rise:active,
+ .low:active {
+   opacity: 1;
  }
 
  .rise {
@@ -572,15 +605,16 @@
    background-image: url("../img/checkbox-off.svg");
    background-repeat: no-repeat;
    background-position: 0 0;
+   opacity: 0.4;
  }
 
  .filter-input-checkbox:checked+label::before {
    background-image: url("../img/checkbox-on.svg");
+   opacity: 0.4;
  }
 
  .filter-input-radio+label::before {
    content: "";
-
    position: absolute;
    left: -30px;
    top: -0px;
@@ -1187,6 +1221,7 @@
    position: absolute;
    left: 0px;
    top: 345px;
+   display: none;
  }
 
  .hover-title {
@@ -1213,16 +1248,21 @@
    width: 200px;
  }
 
- .catalog-hover::before {
+ .catalog-item::before {
    content: "";
    position: absolute;
    background-image: url("../img/browser.svg");
    background-repeat: no-repeat;
    width: 360px;
    height: 40px;
-   top: -385px;
+   top: -40px;
    left: 0px;
-   opacity: 0.3;
+   opacity: 0.12;
+ }
+
+ .catalog-item:hover::before,
+ .catalog-item:active::before {
+opacity: 1;
  }
 
  .site-navigation-current {
