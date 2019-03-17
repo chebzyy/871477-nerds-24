@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <header class="main-header">
+  <header class="main-header catalog-page">
     <div class="container">
       <nav class="main-navigation">
         <h1 class="visually-hidden">Дизайн-студия NERDS </h1>
@@ -34,6 +34,7 @@
       <h1 class="page-title container">Магазин готовых шаблонов</h1>
     </section>
     <section class="container">
+      <h2 class="visually-hidden">Фильтры поиска</h2>
       <div class="catalog-columns">
         <section class="filters">
           <h2 class="visually-hidden">Фильтры поиска</h2>
@@ -198,18 +199,19 @@
       </div>
     </section>
     <section class="contacts">
+      <h2 class="visually-hidden">Контакты</h2>
       <div class="container container-write-us">
         <div class="contacts-write-us">
           <p class="contacts-title">Nerds design studio</p>
           <div class="address">
-            <p>191186, Санкт-Петербург,
-              ул. Б. Конюшенная, д. 19/8
-              <a href="tel:+78122757575"> +7 (812) 275-75-75</a></p>
+            <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            <a href="tel:+78122757575"> +7 (812) 275-75-75</a>
           </div>
-          <a class="button" href="write-us.html">Напишите нам</a>
+          <a class="button write-us-button" href="write-us.html">Напишите нам</a>
         </div>
       </div>
-      <img class="map-img" src="img/2.jpg" width="1440" height="416" alt="Адрес  Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8">
+      <iframe class="map-img" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1552754538304"
+        width="1440" height="416" style="border:0" allowfullscreen></iframe>
     </section>
   </main>
   <footer class="main-footer">
@@ -242,13 +244,12 @@
         <label for="letter"> Текст письма:</label>
         <textarea class="letter" id="letter" name="letter" placeholder="В свободной форме"></textarea>
       </p>
-
-
       <button class="button" type="submit">Отправить</button>
-      <button class="close" type="button">Закрыть</button>
+      <button class="write-us-close" type="button">Закрыть</button>
     </form>
   </section>
 
+  <script src="js/popup.js"></script>
 </body>
 
 </html>
