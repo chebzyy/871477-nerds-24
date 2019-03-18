@@ -101,15 +101,15 @@
 
  }
 
- .site-navigation a:hover {
+ .site-navigation a:hover:not(.site-navigation-current) {
    color: #fb565a
  }
 
- .site-navigation a:active {
-   opacity: 0.3;
+ .site-navigation a:active:not(.site-navigation-current) {
+   color: rgba(0, 0, 0, 0.3);
  }
 
- .slider {
+  .slider {
    background-color: #f1f1f1;
    position: relative;
  }
@@ -117,6 +117,7 @@
  .slider-controls span {
    position: relative;
    display: inline-block;
+   vertical-align: center;
    width: 18px;
    height: 18px;
    margin-right: 16px;
@@ -262,6 +263,7 @@
    text-transform: uppercase;
    margin-top: 30px;
    margin-bottom: 10px;
+   line-height: 30px;
  }
 
  .about-left-block p {
@@ -338,7 +340,7 @@
    border-collapse: separate;
  }
 
- caption {
+ .caption {
    margin-bottom: 37px;
  }
 
@@ -413,6 +415,7 @@
    color: #666666;
    background-color: #ffffff;
    margin-bottom: 38px;
+   line-height: 18px;
  }
 
  .address p {
@@ -433,6 +436,7 @@
    font-size: 16px;
    font-weight: bold;
    line-height: 18px;
+   margin-bottom: 12px;
  }
 
 
@@ -467,6 +471,7 @@
    display: block;
    margin-top: 10px;
    margin-bottom: 16px;
+   line-height: 36px;
  }
 
  .social-button {
@@ -485,6 +490,7 @@
    font-size: 16px;
    color: #283136;
    list-style: none;
+   line-height: 20px;
  }
 
  .filter-input-radio+label:hover::before,
@@ -585,6 +591,7 @@
    margin-left: auto;
    flex-wrap: wrap;
    margin-top: 10px;
+   line-height: 18px;
  }
 
  .sort-filters li {
@@ -752,11 +759,13 @@
  .pagination-item a:active {
    background-color: #d5d5d5;
    color: rgba(0, 0, 0, 0.3);
+   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
  }
 
  .pagination-item-current a {
    color: #000000;
-
+   border: solid 3px #dbdbdb;
+   padding: 8px 17px;
    background-color: #ffffff;
  }
 
@@ -1089,7 +1098,7 @@
    box-sizing: border-box;
    font-size: 16px;
    line-height: 18px;
-   opacity: 0.5;
+   border: solid 2px #d7dcde;
  }
 
  .name-email {
@@ -1233,6 +1242,7 @@
 
  .price-controls label {
    display: inline-block;
+   vertical-align: center;
    width: 50%;
    font-size: 16px;
    text-transform: uppercase;
@@ -1270,8 +1280,8 @@
    background-repeat: no-repeat;
    width: 21px;
    height: 21px;
-   top: -340px;
-   left: 10px;
+   top: -400px;
+   left: -15px;
    background-position: 0 0;
    opacity: 0.3;
  }
@@ -1326,9 +1336,12 @@
    margin-left: 15px;
  }
 
- .catalog-hover button {
+ .hover-button {
    width: 200px;
    margin-left: 17px;
+   text-decoration: none;
+  border: none;
+
  }
 
  .catalog-item::before {
