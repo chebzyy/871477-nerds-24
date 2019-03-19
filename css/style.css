@@ -109,7 +109,7 @@
    color: rgba(0, 0, 0, 0.3);
  }
 
-  .slider {
+ .slider {
    background-color: #f1f1f1;
    position: relative;
  }
@@ -261,7 +261,7 @@
    font-size: 24px;
    font-weight: bold;
    text-transform: uppercase;
-   margin-top: 30px;
+   margin-top: 25px;
    margin-bottom: 10px;
    line-height: 30px;
  }
@@ -309,7 +309,7 @@
  .order-info {
    font-weight: bold;
    text-transform: uppercase;
-   padding-top: 37px;
+   padding-top: 38px;
    padding-left: 0px;
  }
 
@@ -419,7 +419,7 @@
  }
 
  .address p {
-   margin-bottom: 10px;
+   margin-bottom: 16px;
    margin-top: 20px;
    line-height: 20px;
  }
@@ -469,8 +469,8 @@
    font-size: 36px;
    font-weight: bold;
    display: block;
-   margin-top: 10px;
-   margin-bottom: 16px;
+   margin-top: 5px;
+   margin-bottom: 10px;
    line-height: 36px;
  }
 
@@ -494,22 +494,22 @@
  }
 
  .filter-input-radio+label:hover::before,
- .filter-input-radio+label:focus::before {
+ .filter-input-radio:focus+label::before {
    border: 4px solid #4d4d4d;
  }
 
  .filter-input-radio:checked+label:hover::after,
- .filter-input-radio:checked+label:focus::after {
+ .filter-input-radio:focus:checked+label::after {
    background-color: #4d4d4d;
  }
 
  .filter-input-checkbox+label:hover::before,
- .filter-input-checkbox+label:focus::before {
+ .filter-input-checkbox:focus+label::before {
    opacity: 1;
  }
 
  .filter-input-checkbox:checked+label:hover::before,
- .filter-input-checkbox:checked+label:focus::before {
+ .filter-input-checkbox:focus:checked+label::before {
    opacity: 1;
  }
 
@@ -560,7 +560,7 @@
  }
 
  .cage {
-   margin-bottom: 45px;
+   margin-bottom: 40px;
  }
 
  .cage h3 {
@@ -669,6 +669,7 @@
    display: block;
    cursor: pointer;
    user-select: none;
+   padding-bottom: 5px
  }
 
  .filter-input-checkbox+label::before {
@@ -1340,8 +1341,6 @@
    width: 200px;
    margin-left: 17px;
    text-decoration: none;
-  border: none;
-
  }
 
  .catalog-item::before {
@@ -1377,7 +1376,7 @@
  }
 
  .servis-text {
-   margin-bottom: 33px;
+   margin-bottom: 32px;
    margin-top: 18px;
  }
 
